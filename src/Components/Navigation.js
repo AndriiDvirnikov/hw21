@@ -1,26 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-const links = [
-    {
-        to: '/',
-        label:'Home page'
-    },
-    {
-        to: '/contacts',
-        label:'Contacts page'
-    },
-    {
-        to: '/about',
-        label:'About page'
-    },
-    {
-        to: '/photos',
-        label:'Photo page'
-    },
-]
 
- const Navigation = ()=> {
+ const Navigation = ({links})=> {
     return(
     <nav>
         <ul className="nav">

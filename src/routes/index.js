@@ -1,5 +1,6 @@
 
 import AboutPage from "../Components/pages/About";
+import AcountPage from "../Components/pages/Acount";
 import ContactsPage from "../Components/pages/Contacts";
 import HomePage from "../Components/pages/Home";
 import PhotoPage from "../Components/pages/Photo";
@@ -24,5 +25,11 @@ export const appRoutes = [
         path :'/photos',
         
         component:PhotoPage
+    },
+    {
+        path :'/acount',
+        
+        component:AcountPage
     }
+
 ];

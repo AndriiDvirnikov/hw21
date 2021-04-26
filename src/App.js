@@ -5,6 +5,28 @@ import Navigation from './Components/Navigation';
 import { appRoutes } from "./routes"
 
 
+const links = [
+  {
+      to: '/',
+      label:'Home page'
+  },
+  {
+      to: '/contacts',
+      label:'Contacts page'
+  },
+  {
+      to: '/about',
+      label:'Post page'
+  },
+  {
+      to: '/photos',
+      label:'Photo page'
+  },
+  {
+      to: '/acount',
+      label:'Acount page'
+  },
+]
 
 function App() {
 
@@ -13,9 +35,9 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <Navigation />
+        <Navigation links = {links}/>
       </header>
-      <main>
+      <main className="main_box">
         <Switch>
           {appRoutes.map(rout=>(
             <Route key = {rout.path}{...rout} />

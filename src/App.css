@@ -4,8 +4,9 @@ justify-content: center;
 }
 
 .App {
-  text-align: center;
-  width: 907px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .App-logo {
@@ -47,6 +48,7 @@ justify-content: center;
   width: 100%;
   height: 500px;
   background-color: #ccc;
+  text-align: center;
 }
 .home img {
   padding-top: 15px;
@@ -63,6 +65,7 @@ justify-content: center;
   list-style: none;
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 .link {
   margin: 5px;
@@ -90,3 +93,91 @@ justify-content: center;
    box-shadow: 15px 15px 10px rgba(2, 2, 2, 0.6);
 }
 
+
+.img_hold{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box{
+  margin: 1% 2%;
+ 
+  }
+
+  .box > img {
+    border-radius: 8px;
+    box-shadow: 0 0 16px blue;
+    transition: all ease-in .3s;
+  }
+
+  .box:hover img {
+    transform: scale(1.2);
+  }
+
+
+  .main-block{
+  width: 650px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.hold_top{
+  display: flex;
+  justify-content: row;
+}
+
+
+
+.hold-header{
+  display: flex;
+  flex-direction: row;
+}
+.avatar {
+  margin-right: 10px; 
+}
+.avatar img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid;
+  border-radius: 50%
+}
+.info_user{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Architects Daughter', cursive;
+}
+.info_user p{
+  margin: 0;
+  padding: 5px;
+}
+.info_user span{
+  font-size: 20px;
+  font-weight: bold;
+}
+.imgPost{
+  width: 100%;
+}
+
+.hold_icon{
+  display: flex;
+  justify-content: start;
+  padding: 5px;
+}
+.hold_icon div{
+ display: block;
+   margin-left: 25px;
+}
+.hold_icon div:first-child{
+  margin-left:0 ;
+}
+.hold_icon div i{
+  margin-right: 5px;
+}
+.main_box h1  {
+  text-align: center;
+}

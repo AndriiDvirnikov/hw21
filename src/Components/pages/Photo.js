@@ -6,7 +6,14 @@ const PhotoPage = ()=>{
     return (
       <>
         <PageHeader>Photo Page</PageHeader>
-
+        <div className="img_hold">
+          <div className="box"><img src="https://via.placeholder.com/250"/></div>
+          <div className="box"><img src="https://via.placeholder.com/250"/></div>
+          <div className="box"><img src="https://via.placeholder.com/250"/></div>
+          <div className="box"><img src="https://via.placeholder.com/250"/></div>
+          <div className="box"><img src="https://via.placeholder.com/250"/></div>
+          
+        </div>
       </>
       )
   }
